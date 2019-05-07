@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>{{title}}</h1>
+  <h2>Manager: {{myHero.name}}</h2>
+  <p>Registered Employees:</p>
+  <ul>
+    <li *ngFor="let hero of heroes">
+      {{ hero.name }}
+    </li>
+  </ul>
+  <p *ngIf="heroes.length > 7">There are many heroes!</p>
+  <div>
+    <form>
+     Name: <br><input type="text" placeholder="enter text"><br>
+     Mobile No.:<br><input type="text" placeholder="enter Number"><br><br>
+     <input type="button" value="Click me" (click)="getString()">
+    </form>
+  </div>
+
+
